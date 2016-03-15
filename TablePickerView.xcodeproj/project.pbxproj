@@ -10,6 +10,9 @@
 		3309CD7D1BC7A98C00EF6C6B /* TablePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3309CD7C1BC7A98C00EF6C6B /* TablePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3309CD841BC7A98C00EF6C6B /* TablePickerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3309CD791BC7A98C00EF6C6B /* TablePickerView.framework */; settings = {ASSET_TAGS = (); }; };
 		3309CD891BC7A98C00EF6C6B /* TablePickerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309CD881BC7A98C00EF6C6B /* TablePickerViewTests.swift */; };
+		3309CD941BC7A9A800EF6C6B /* TablePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309CD931BC7A9A800EF6C6B /* TablePickerView.swift */; settings = {ASSET_TAGS = (); }; };
+		3309CD961BC7AC8100EF6C6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3309CD951BC7AC8100EF6C6B /* UIKit.framework */; };
+		3309CD981BC7AC9800EF6C6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3309CD971BC7AC9800EF6C6B /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +25,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3309CDA51BC7D17E00EF6C6B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3309CD791BC7A98C00EF6C6B /* TablePickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TablePickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3309CD7C1BC7A98C00EF6C6B /* TablePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TablePickerView.h; sourceTree = "<group>"; };
@@ -29,6 +44,9 @@
 		3309CD831BC7A98C00EF6C6B /* TablePickerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TablePickerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3309CD881BC7A98C00EF6C6B /* TablePickerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablePickerViewTests.swift; sourceTree = "<group>"; };
 		3309CD8A1BC7A98C00EF6C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3309CD931BC7A9A800EF6C6B /* TablePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablePickerView.swift; sourceTree = "<group>"; };
+		3309CD951BC7AC8100EF6C6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3309CD971BC7AC9800EF6C6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3309CD981BC7AC9800EF6C6B /* Foundation.framework in Frameworks */,
+				3309CD961BC7AC8100EF6C6B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +73,8 @@
 		3309CD6F1BC7A98C00EF6C6B = {
 			isa = PBXGroup;
 			children = (
+				3309CD971BC7AC9800EF6C6B /* Foundation.framework */,
+				3309CD951BC7AC8100EF6C6B /* UIKit.framework */,
 				3309CD7B1BC7A98C00EF6C6B /* TablePickerView */,
 				3309CD871BC7A98C00EF6C6B /* TablePickerViewTests */,
 				3309CD7A1BC7A98C00EF6C6B /* Products */,
@@ -73,6 +95,7 @@
 			children = (
 				3309CD7C1BC7A98C00EF6C6B /* TablePickerView.h */,
 				3309CD7E1BC7A98C00EF6C6B /* Info.plist */,
+				3309CD931BC7A9A800EF6C6B /* TablePickerView.swift */,
 			);
 			path = TablePickerView;
 			sourceTree = "<group>";
@@ -108,6 +131,7 @@
 				3309CD751BC7A98C00EF6C6B /* Frameworks */,
 				3309CD761BC7A98C00EF6C6B /* Headers */,
 				3309CD771BC7A98C00EF6C6B /* Resources */,
+				3309CDA51BC7D17E00EF6C6B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -142,6 +166,7 @@
 		3309CD701BC7A98C00EF6C6B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = hc.gg;
 				TargetAttributes = {
@@ -193,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3309CD941BC7A9A800EF6C6B /* TablePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +333,7 @@
 		3309CD8E1BC7A98C00EF6C6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +344,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gg.hc.TablePickerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3309CD8F1BC7A98C00EF6C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
